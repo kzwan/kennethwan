@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .circle {
+    position: relative;
+    width: 100px; /* Adjust the width and height as needed */
+    height: 100px; /* Adjust the width and height as needed */
+    animation: animate 10s linear infinite;
+    transform-style: preserve-3d;
+    --deg: calc(360deg / var(--numchs));
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotateY(360deg) rotateX(7deg);
+    }
+
+    100% {
+      transform: rotateY(0deg) rotateX(7deg);
+    }
+  }
+  
+  .char {
+    position: absolute;
+    background-color: white;
+    /* border-width: 2em; */
+    border: 2.5px solid;
+    border-left: 0;
+    border-right: 0;
+    font-size: 6em;
+    letter-spacing: 0.2em;
+    top: 50%; /* Adjust as needed to center characters vertically */
+    left: 50%; /* Adjust as needed to center characters horizontally */
+    transform-style: preserve-3d;
+    transform-origin: center;
+    --spacing: 260px;
+    transform: rotateY(calc(var(--char-index) * var(--deg) * 1)) translateZ(calc(var(--spacing) * 1.75)); /* Adjust the Z translation to fit within the circle */
+  }
