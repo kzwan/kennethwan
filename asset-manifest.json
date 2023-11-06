@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/kennethwan/static/css/main.355b2585.css",
-    "main.js": "/kennethwan/static/js/main.d2031252.js",
+    "main.js": "/kennethwan/static/js/main.f2e5487d.js",
     "static/js/787.4ccddc2d.chunk.js": "/kennethwan/static/js/787.4ccddc2d.chunk.js",
+    "static/media/kwresume.pdf": "/kennethwan/static/media/kwresume.b201df163b11a87c41ec.pdf",
     "static/media/poppins-devanagari-400-normal.woff": "/kennethwan/static/media/poppins-devanagari-400-normal.0e11b62db931f85340d4.woff",
     "static/media/poppins-devanagari-500-normal.woff": "/kennethwan/static/media/poppins-devanagari-500-normal.f681eaa0ad0df351e7db.woff",
     "static/media/poppins-devanagari-400-normal.woff2": "/kennethwan/static/media/poppins-devanagari-400-normal.64d5f06ee726edd58ca3.woff2",
@@ -22,11 +23,11 @@
     "index.html": "/kennethwan/index.html",
     "static/media/resume.svg": "/kennethwan/static/media/resume.f65c32da6d2fb38c2e4ab644b8923a9f.svg",
     "main.355b2585.css.map": "/kennethwan/static/css/main.355b2585.css.map",
-    "main.d2031252.js.map": "/kennethwan/static/js/main.d2031252.js.map",
+    "main.f2e5487d.js.map": "/kennethwan/static/js/main.f2e5487d.js.map",
     "787.4ccddc2d.chunk.js.map": "/kennethwan/static/js/787.4ccddc2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.355b2585.css",
-    "static/js/main.d2031252.js"
+    "static/js/main.f2e5487d.js"
   ]
 }
