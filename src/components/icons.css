@@ -1,0 +1,45 @@
+.linkedin {
+    width: 6vw;
+    height: 6vh;
+}
+
+.github {
+    width: 6vw;
+    height: 6vh;
+}
+
+
+.resume path {
+    fill: #E1C16E; 
+    stroke: #E1C16E; 
+}
+
+.resume {
+    width: 6vw;
+    height: 6vh;
+}
+
+.spotify {
+    width: 6vw;
+    height: 6vh;
+}
+
+.spotify path {
+    fill: #07ba31; /* Change the color to your desired color */
+    stroke: #07ba31; /* Change the stroke color, if applicable */
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from the parent element */
+  }
+
+  .icon-hover {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  .icon-hover:hover {
+    transform: scale(1.2); /* Scale to 1.1 times on hover */
+  }
+

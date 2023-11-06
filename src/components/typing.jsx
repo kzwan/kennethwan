@@ -1,19 +1,18 @@
-
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import "@fontsource/montserrat";
-import "@fontsource/montserrat/500.css";
+import "@fontsource/poppins";
+import "@fontsource/poppins/500.css";
 
 function Typing() {
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
-            <div style={{ fontSize: '50px', fontFamily: 'Montserrat' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: "Poppins" }}>
+            <div style={{ fontSize: '4em', fontFamily: "Poppins", color: 'black' }}>
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
                             .stop()
-                            .typeString("hi! i'm kenny 👋")
-                            .pauseFor(1800) // pause after the initial text
+                            .typeString("hi! i'm kenny ☺")
+                            .pauseFor(2000) // pause after the initial text
                             .deleteAll()
                             .typeString("i'm an <strong>engineer</strong>")
                             .pauseFor(1500) // pause after "I'm an engineer"

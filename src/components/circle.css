@@ -1,8 +1,9 @@
+
 * {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    background-color: #FFFEFC;
   }
   
   body {
@@ -14,36 +15,39 @@
   
   .circle {
     position: relative;
-    width: 100px; /* Adjust the width and height as needed */
-    height: 100px; /* Adjust the width and height as needed */
-    animation: animate 10s linear infinite;
+    background-color: transparent;
+    width: 100px;
+    height: 100px; 
+    animation: animate 9s linear infinite;
     transform-style: preserve-3d;
     --deg: calc(360deg / var(--numchs));
+    font-family: monospace;
   }
   
   @keyframes animate {
     0% {
-      transform: rotateY(360deg) rotateX(7deg);
+      transform: rotateY(360deg) rotateX(4deg);
     }
 
     100% {
-      transform: rotateY(0deg) rotateX(7deg);
+      transform: rotateY(0deg) rotateX(4deg);
     }
   }
   
   .char {
     position: absolute;
-    background-color: white;
-    /* border-width: 2em; */
+    background-color: #FFFEFC;
+    color: black;
     border: 2.5px solid;
     border-left: 0;
     border-right: 0;
     font-size: 6em;
     letter-spacing: 0.2em;
-    top: 50%; /* Adjust as needed to center characters vertically */
-    left: 50%; /* Adjust as needed to center characters horizontally */
+    top: 50%;
+    left: 50%;
     transform-style: preserve-3d;
     transform-origin: center;
     --spacing: 260px;
-    transform: rotateY(calc(var(--char-index) * var(--deg) * 1)) translateZ(calc(var(--spacing) * 1.75)); /* Adjust the Z translation to fit within the circle */
+    transform: rotateY(calc(var(--char-index) * var(--deg) * 1)) translateZ(calc(var(--spacing) * 1.75));
   }
+
