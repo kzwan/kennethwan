@@ -6,7 +6,7 @@ import "@fontsource/poppins/500.css";
 function Typing() {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: "Poppins" }}>
-            <div style={{ fontSize: '4em', fontFamily: "Poppins", color: 'black' }}>
+            <div style={{ fontSize: '4.2em', fontFamily: "Poppins", color: 'black' }}>
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter

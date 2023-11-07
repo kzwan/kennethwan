@@ -13,12 +13,14 @@ import { ReactComponent as Spotify } from '../images/spotify.svg'
 function Icons() {
     return (
         <div style={{display: 'flex', flexDirection: "row", fontFamily: "Poppins", fontSize: "0.8em", fontWeight: "bold", width: "35vw", justifyContent: "space-between"}}>
-            <div style={{display: 'flex', flexDirection: "column", alignItems: "center"}} className="icon-hover">
-                <Resume
-                    className="resume"
-                />
-                <p style={{marginTop: "3px"}}>Resume</p>
-            </div>
+            <a href={require("../images/kwresume.pdf")} download="Kenneth_Wan_Resume">
+                <div style={{display: 'flex', flexDirection: "column", alignItems: "center"}} className="icon-hover">
+                    <Resume
+                        className="resume"
+                    />
+                    <p style={{marginTop: "3px"}}>Resume</p>
+                </div>
+            </a>
             <a href="https://www.linkedin.com/in/kennethzwan/" target="_blank" rel="noopener noreferrer">
                 <div style={{display: 'flex', flexDirection: "column", alignItems: "center"}} className="icon-hover">
                     <LinkedIn

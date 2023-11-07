@@ -5,6 +5,59 @@ section {
   justify-content: center;
 }
 
+.arrow {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 50% 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-first {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow-second {
+  animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: gray;
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 43vh;
+  left: 0;
+  width: 20px;
+}
+
+.arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+
+.arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+  0% {
+      opacity: 0;
+      top: 45%;
+  }
+  70% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
 /* html.has-scroll-smooth {
   overflow: hidden; }
 
