@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/kennethwan/static/css/main.355b2585.css",
-    "main.js": "/kennethwan/static/js/main.f2e5487d.js",
+    "main.css": "/kennethwan/static/css/main.4dacd7e8.css",
+    "main.js": "/kennethwan/static/js/main.72eb89e0.js",
     "static/js/787.4ccddc2d.chunk.js": "/kennethwan/static/js/787.4ccddc2d.chunk.js",
+    "static/media/planit.png": "/kennethwan/static/media/planit.daf0e4a5b8558417ed48.png",
     "static/media/kwresume.pdf": "/kennethwan/static/media/kwresume.b201df163b11a87c41ec.pdf",
     "static/media/poppins-devanagari-400-normal.woff": "/kennethwan/static/media/poppins-devanagari-400-normal.0e11b62db931f85340d4.woff",
     "static/media/poppins-devanagari-500-normal.woff": "/kennethwan/static/media/poppins-devanagari-500-normal.f681eaa0ad0df351e7db.woff",
@@ -22,12 +23,12 @@
     "static/media/linkedin.svg": "/kennethwan/static/media/linkedin.c341cc1c307221b0fe42599c619ceeaf.svg",
     "index.html": "/kennethwan/index.html",
     "static/media/resume.svg": "/kennethwan/static/media/resume.f65c32da6d2fb38c2e4ab644b8923a9f.svg",
-    "main.355b2585.css.map": "/kennethwan/static/css/main.355b2585.css.map",
-    "main.f2e5487d.js.map": "/kennethwan/static/js/main.f2e5487d.js.map",
+    "main.4dacd7e8.css.map": "/kennethwan/static/css/main.4dacd7e8.css.map",
+    "main.72eb89e0.js.map": "/kennethwan/static/js/main.72eb89e0.js.map",
     "787.4ccddc2d.chunk.js.map": "/kennethwan/static/js/787.4ccddc2d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.355b2585.css",
-    "static/js/main.f2e5487d.js"
+    "static/css/main.4dacd7e8.css",
+    "static/js/main.72eb89e0.js"
   ]
 }
