@@ -1,0 +1,125 @@
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .projectImage {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--background-light);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    margin-bottom: -40px;
+  }
+  
+  .projectImage img {
+    width: 85%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 20%;
+  
+    transition: 0.25s all;
+    border-radius: 0.4rem;
+  }
+  
+  @media (max-width: 768px) {
+    .projectImage img {
+      width: 85%;
+      height: 90%;
+    }
+  }
+  
+  .projectCopy {
+    margin: 1.6rem 0;
+  }
+  
+  .projectTitle {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: -20px;
+  }
+  
+  .projectTitle h4 {
+    font-weight: bold;
+    font-size: 26px;
+    flex-shrink: 0;
+    /* max-width: calc(100% - 150px); */
+  }
+  
+  .projectTitle a {
+    opacity: 0.75;
+    transition: 0.25s opacity;
+  }
+  
+  .projectTitle a:hover {
+    opacity: 1;
+  }
+  
+  .projectTitleLine {
+    width: 100%;
+    height: 1px;
+    background: black;
+    opacity: 0.3;
+  }
+  
+  .projectDescription {
+    font-weight: 200;
+  }
+  
+  .projectDescription span {
+    /* display: inline-block; */
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--brand);
+    cursor: pointer;
+    /* margin-top: 2.5rem; */
+  }
+  
+  .projectDescription span:hover {
+    text-decoration: underline;
+  }
+  
+  .projectTech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    font-size: 18px;
+    color: var(--brand);
+    font-weight: 400;
+  }
+
+  .section-wrapper {
+    position: relative;
+    z-index: 10;
+    max-width: 1150px;
+    margin: auto;
+    padding: 9.6rem;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .section-wrapper {
+      padding: 7.2rem 2.4rem;
+    }
+  }
+  
+  .chip {
+    font-size: var(--text-xs);
+    background: var(--background-light);
+    padding: 0.2rem 0.8rem;
+    border-radius: 999px;
+  }
+  

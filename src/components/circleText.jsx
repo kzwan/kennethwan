@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./circle.css"; 
 
 const CircleText = () => {
-  const [text, setText] = useState('Software Engineering   iOS Dev   Web Dev   AI   ');
+  const [text, setText] = useState('CONTACT    CONTACT     CONTACT    CONTACT    ');
 
   return (
     <div className="circle" style={{ '--numchs': text.length }}>

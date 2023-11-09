@@ -2,6 +2,7 @@ import React, { useRef} from "react";
 import Typing from "./components/typing";
 import CircleText from "./components/circleText";
 import Icons from "./components/icons"
+// import Project from "./components/project/projects";
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import "./App.css"
 import "@fontsource/poppins";
@@ -46,42 +47,51 @@ import "@fontsource/poppins";
 //   );
 // }
 
-import useScrollSnap from "react-use-scroll-snap";
-import Projects from "./components/projects";
+import Projects from "./components/project/projectscontainer";
+import About from "./components/about/about";
+import { ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut, Animator } from "react-scroll-motion";
+import SectionHeader from "./components/sectionheader";
+import Contact from "./components/contact/contact";
 
 function App() {
-  const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef, duration: 500, isDirectionEnabled: false });
+  const FadeUp = batch(Fade(), Move(), Sticky());
 
   return (
-      <main ref={scrollRef}>
-        <section className="section1">
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: "absolute", width: "100vw", marginBottom: "30vh", marginTop: "8vh"}}>
-              <Typing/>
-          </div>
-          <div style={{display: "flex", marginTop: "12vh"}}>
-            <Icons/>
-          </div>
-          <div class="arrow arrow-first"></div>
-          <div class="arrow arrow-second"></div>
-        </section>
-        <section style={{}}>
-          <div style={{ position: 'absolute', marginTop: '-60vh' }}>
+      <main>
+        <ScrollContainer>
+          <ScrollPage>
+            <Animator animation={batch(Fade(), Sticky())}>
+              <section style={{ height: "100vh", display: "flex", alignItems: "center", justifyContent: "center"}}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: "absolute", width: "100vw", marginBottom: "30vh", marginTop: "8vh"}}>
+                    <Typing/>
+                </div>
+                <div style={{display: "flex", marginTop: "12vh"}}>
+                  <Icons/>
+                </div>
+                <div class="arrow arrow-first"></div>
+                <div class="arrow arrow-second"></div>
+              </section>
+            </Animator>
+          </ScrollPage>
+          <ScrollPage>
+            <section style={{ display: "flex", alignItems: "center", justifyContent: "center", border: "solid", borderColor: "gray", backgroundColor: "#FFFEFC", width: "100vw", borderTopLeftRadius: "47px", borderTopRightRadius: "47px"}}>
+              <About/>
+            </section>
+          </ScrollPage>
+        <div style={{}}>
+          <Projects />
+        </div>
+        <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+          <div style={{ position: 'absolute', marginTop: '-45vh', marginBottom: "10vh" }}>
               <CircleText/>
           </div>
-          <div style={{display: "flex", width: "53vw", fontFamily: "Poppins", fontSize: "21px", lineHeight: "35px", textAlign: "center", marginTop: "33vh"}}>
-            WELCOME!! My name is Kenny and I'm currently a junior studying computer science at UCLA! I'm currently looking for internships during Winter/Spring/Summer 2024 in software engineering and fullstack web/mobile development.
-            <br />
-            <br />
-            Outside of boring career stuff, I'm a big fan of outdoor activities like hiking, coding for social good, and listening to music.
-          </div>
-        </section>
-        <section style={{}}>
-          <Projects />
-        </section>
-        <section style={{backgroundColor: "green"}}>
-            <p>section 4</p>
-        </section>
+          <Contact/>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        </ScrollContainer>
       </main>
   );
 }
