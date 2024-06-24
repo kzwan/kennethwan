@@ -24,7 +24,20 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Kenny Wan</title>
+    <script>
+      function isMobileDevice() {
+        return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+  
+      function showCompatibilityAlert() {
+        if (isMobileDevice()) {
+          alert("This site is not compatible on mobile devices.");
+        }
+      }
+  
+      window.onload = showCompatibilityAlert;
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
